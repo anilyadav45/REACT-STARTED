@@ -1,7 +1,7 @@
-function Title(){
+function Title({title}){
     return (
         <>
-        <h1>Structuring The Components Smoothly </h1>
+        <h2>{title}</h2>
         </>
     )
 }

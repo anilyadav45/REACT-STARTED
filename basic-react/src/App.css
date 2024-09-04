@@ -50,3 +50,16 @@
   display:flex;
   width: 35rem;
 }
+.container{
+  display: flex;
+  justify-content: space-around;
+  width: 80vw;
+  flex-wrap: wrap;
+}
+.container .box{
+  width: 20rem;
+  height: 15rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  box-shadow: 0 0 6px white;
+}
