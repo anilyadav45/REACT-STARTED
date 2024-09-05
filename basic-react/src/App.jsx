@@ -25,6 +25,7 @@ function App() {
     </>
   );
 }
+//attributes used to pass the values the the above values passed as string to pass as number we have to use block { 1000} like that 
 
 export default App;
 //exporting default app so that main jsx can import or require
