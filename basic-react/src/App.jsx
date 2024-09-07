@@ -10,22 +10,22 @@ function App() {
     <>
       <div className="container">
         <div className="box">
-        <Title  title = "Laptop"/>
-        <Content content = "This is best laptop under 100,000"/>
+          <Title title="Laptop" />
+          <Content content="This is best laptop under 100,000" />
         </div>
         <div className="box">
-        <Title  title = "Smartphone"/>
-        <Content content = "This is best Smartphone under 30,000"/>
+          <Title title="Smartphone" />
+          <Content content="This is best Smartphone under 30,000" />
         </div>
         <div className="box">
-        <Title  title = "Earbuds"/>
-        <Content content = "This is best Earbuds under 3000"/>
+          <Title title="Earbuds" />
+          <Content content="This is best Earbuds under 3000" />
         </div>
       </div>
     </>
   );
 }
-//attributes used to pass the values the the above values passed as string to pass as number we have to use block { 1000} like that 
+//attributes used to pass the values the the above values passed as string to pass as number we have to use block { 1000} like that
 
 export default App;
 //exporting default app so that main jsx can import or require
