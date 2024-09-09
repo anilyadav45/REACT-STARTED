@@ -6,20 +6,23 @@ import Content from "./content.jsx";
 //All the components we made like Title and Boxes we don't make like this we create indivisual files for components as jsx form
 //in src folder i am creating one component file which will be exported
 function App() {
+  let lists1 = ["Compactible","BatteryLife","Durable"];
+  let lists2 = ["15-5G bands","BatteryLife","Durable"];
+  let lists3 = ["Display","BatteryLife","Durable"];
   return (
     <>
       <div className="container">
         <div className="box">
           <Title title="Laptop" />
-          <Content content="This is best laptop under 100,000" />
+          <Content content="This is best laptop under 100,000" features = {lists1}/>
         </div>
         <div className="box">
           <Title title="Smartphone" />
-          <Content content="This is best Smartphone under 30,000" />
+          <Content content="This is best Smartphone under 30,000"   features = {lists2}/>
         </div>
         <div className="box">
           <Title title="Earbuds" />
-          <Content content="This is best Earbuds under 3000" />
+          <Content content="This is best Earbuds under 3000"   features = {lists3}/>
         </div>
       </div>
     </>
