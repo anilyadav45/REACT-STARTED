@@ -2,7 +2,7 @@ function messageBox({userName,Color}){
     let styles = {color:Color};
     return <>
     <p>
-        <h4 style={styles}>{userName}</h4>
+        <h4 style={styles}>Hello , {userName}</h4>
     </p>
     </>
 }

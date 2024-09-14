@@ -1,8 +1,9 @@
 import { useState } from "react";
 import "./App.css";
-import Title from "./Title.jsx";
-import Content from "./content.jsx";
+// import Title from "./Title.jsx";
+// import Content from "./content.jsx";
 import DisplayMsg from "./displayMsg.jsx";
+import Amazontab from "./Amazontab.jsx";
 
 //All the components we made like Title and Boxes we don't make like this we create indivisual files for components as jsx form
 //in src folder i am creating one component file which will be exported
@@ -41,6 +42,10 @@ function App() {
             <DisplayMsg userName="Buffer3408403" Color="white" /> 
             {/* three different color passed for each msgbox container with passing props / */}
         </div>
+      </div>
+
+      <div className="amazonTab">
+        <Amazontab/>
       </div>
     </>
   );
