@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./App.css";
+// import "./App.css";
 import Product from "./product";
 
 //All the components we made like Title and Boxes we don't make like this we create indivisual files for components as jsx form
