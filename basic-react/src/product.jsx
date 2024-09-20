@@ -4,7 +4,7 @@ import Desc from "./desc";
 import "./product.css";
 function product({ title, desc, prices}) {
     let idx = 0;
-    let styles = {display:"flex",width:300,justifyContent:"space-around" ,flexDirection:"column" ,alignItems:"center"};
+    let styles = {display:"flex",width:300,justifyContent:"space-around" ,flexDirection:"column" ,backgroundColor:"#3f8cd4",alignItems:"center"};
   return (
     <>
       <div className="product" style={styles}>
