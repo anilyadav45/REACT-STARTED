@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import ProductTab from "./productTab.jsx";
+import Form from "./Form.jsx";
 
 //All the components we made like Title and Boxes we don't make like this we create indivisual files for components as jsx form
 //in src folder i am creating one component file which will be exported
@@ -11,6 +12,7 @@ function App() {
       <div className="main">
       <h3>BlockBusters Deals on Computer Accesories</h3>
         <ProductTab/>
+        {/* <Form/> */}
       </div>
     </>
   );
