@@ -1,24 +1,27 @@
-// let count = 0;
-// function increaseCounter(){
-//     count += 1;
-//     console.log(count);
-//     //here without using states this will not render to DOM only render to console so to render this we'll learn states in react
-// }
-import { useState } from "react"; //requiring useState hooks
+import { useState } from "react"; // Importing useState hook
 
-export default function () {
-  //defining or initializing useState variable so that re-render work
-  let [count, setCount] = useState(0); //defined count variable and inialized as useState initialized so it will re-render to DOM let's see with again making function
-  let inCount = () => {
-    setCount(count + 1); //here setCount work for re-render while increment how while clicking each time this state setCount is like function each time increase it by one 
-    //it is not good way to using states but at beggining state it is just for what is the use of states
+export default function Counter() {
+  // Declare a state variable 'count' with an initial value of 0
+  const [count, setCount] = useState(0);
+
+  // Function to handle the increment of count
+  const incrementCount = () => {
+    setCount(count + 1); // Increment count
+  };
+
+  // Function to handle the decrement of count
+  const decrementCount = () => {
+    setCount(count - 1); // Decrement count
   };
 
   return (
     <>
-      <h2>States-in-js</h2>
-      <h3>{count}</h3>
-      <button onClick={inCount}>Increase counter</button>
+      <div style={{ textAlign: "center", marginTop: "50px" }}>
+        <h1>Simple Counter</h1>
+        <p>Current Count: {count}</p>
+        <button onClick={decrementCount}>-</button>
+        <button onClick={incrementCount}>+</button>
+      </div>
     </>
   );
 }
