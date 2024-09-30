@@ -1,6 +1,6 @@
 //adding events on click
 function clickHandle() {
-  alert("Items succesfully added to wishlist ");
+  alert("Items succesfully added to Cart ");
 }
 function onDblClick(){
     alert("Item Ordered Succesfully! Check you order lists");
