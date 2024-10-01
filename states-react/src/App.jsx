@@ -7,10 +7,10 @@ function App() {
 
   return (
     <>
-      
-      <LikeBtn/>
+    <LikeBtn/>
     </>
   )
+  
 }
 
 export default App
