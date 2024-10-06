@@ -21,3 +21,4 @@ function App() {
 
 export default App;
 //exporting default app so that main jsx can import or require
+//closure concepts in js for reatjs
