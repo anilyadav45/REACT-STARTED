@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-    <LikeBtn/>
+    <Counter/>
     </>
   )
   
