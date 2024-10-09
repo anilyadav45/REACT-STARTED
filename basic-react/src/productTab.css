@@ -5,3 +5,8 @@
     flex-wrap: wrap;
     justify-content: space-around;
 }
+.product-image {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
