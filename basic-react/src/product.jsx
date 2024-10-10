@@ -1,11 +1,22 @@
-import Title from "./title";
-import Price from "./price";
-import Desc from "./desc";
+import Title from "./title.jsx";
+import Price from "./price.jsx";
+import Desc from "./desc.jsx";
 import "./product.css";
 import Button from "./button.jsx";
-function product({ title, desc, prices,imageSrc}) {
-    let idx = 0;
-    let styles = {display:"flex",width:300,justifyContent:"space-around" ,flexDirection:"column" ,backgroundColor:"#3f8cd4",alignItems:"center",height:"200px"};
+
+function Product({ title, desc, prices, imageSrc }) {
+  let styles = {
+    display: "flex",
+    width: 300,
+    justifyContent: "space-around",
+    flexDirection: "column",
+    backgroundColor: "#2f3b4d",
+    alignItems: "center",
+    height: "400px",
+    borderRadius:"6px",
+    color:"#fff"
+  };
+
   return (
     <>
       <div className="product" style={styles}>
@@ -13,9 +24,10 @@ function product({ title, desc, prices,imageSrc}) {
         <img src={imageSrc} alt={title} className="product-image" /> {/* Render image */}
         <Desc desc={desc} />
         <Price prices={prices} />
-        <Button/>
+        <Button />
       </div>
     </>
   );
 }
-export default product;
+
+export default Product;
